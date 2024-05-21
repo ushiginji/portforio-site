@@ -64,3 +64,68 @@ footer {
     text-align: center;
     padding: 20px;
 }
+
+/* . とつけるとhtmlファイルに書いている同じ名前のclassを指定することができます */
+
+/* .rounded-buttonクラスは、角が丸く、ボーダー、パディング、背景色、ホバー時のカーソル変更を設定します */
+.rounded-button {
+    border-radius: 15px; /* 角を15px丸くする */
+    border: 1px solid #000000; /* 黒のボーダー */
+    padding: 10px 30px; /* ボタン内のパディング */
+    background: #919191; /* 灰色の背景色 */
+    cursor: pointer; /* ホバー時のカーソルをポインターにする */
+}
+
+/* .relative-boxクラスは、要素を通常の位置から相対的に配置します */
+.relative-box {
+    position: relative;
+    top: 10px;
+    left: 10px;
+}
+
+/* .absolute-boxクラスは、要素を最も近い配置された先祖から絶対的に配置します */
+.absolute-box {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+/* .flex-containerクラスは、アイテム間にスペースを作るフレックスコンテナを生成します */
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* .flex-itemクラスは、フレックスアイテムが利用可能なスペースを埋めるように成長することを許可します */
+.flex-item {
+    flex: 1;
+}
+
+/* .float-leftクラスは、要素を左に浮動させ、10pxのマージンを追加します */
+.float-left {
+    float: left;
+    margin: 10px;
+}
+
+/* .clearfixクラスは、擬似要素を使用して浮動要素をクリアします */
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* .pseudo-elementクラスは、要素の内容の前に星のシンボルを追加します */
+.pseudo-element::before {
+    content: "★";
+    color: gold;
+}
+
+/* .gradient-backgroundクラスは、赤から黄色への線形グラデーション背景を適用します */
+.gradient-background {
+    background: linear-gradient(to right, red, yellow);
+}
+
+/* .filtered-imageクラスは、画像にぼかしと明るさのフィルターを適用します */
+.filtered-image {
+    filter: blur(5px) brightness(1.2);
+}
