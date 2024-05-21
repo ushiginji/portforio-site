@@ -1,10 +1,16 @@
 <!DOCTYPE html>
+<!--このファイルがHTML5で書かれていることを指しています-->
 <html lang="ja">
+    <!--このHTMLドキュメントの言語が日本語であることを指しています-->
 <head>
     <meta charset="UTF-8">
+    <!--文字エンコーティングをUTF-8に設定しています-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--ビューポートの設定。画面幅に応じてスケーリングされます-->
     <title>ポートフォリオ</title>
+    <!--ウェブページのタイトルを設定します-->
     <link rel="stylesheet" href="css/style.css" type="text/css">
+    <!--外部スタイルシートをリンクしています-->
 </head>
 <body>
 
@@ -20,6 +26,34 @@
 </header>
 
 <main>
+    <!--メインコンテンツを囲むタグ-->
+    <div class=""box rounded-button">Box 1</div>
+    <!--rounded-buttonクラスが適用されたボックス-->
+    <div class="box relative-box">Box 2</div>
+    <!--.relative-boxクラスが適用されたボックス-->
+    <div class="box absolute-box">Box 3</div>
+    <!--.absolute-boxクラスが適用されたボックス-->
+    <div class="flex-container">
+    <!--フレックスコンテナ-->
+    <div class="flex-item">Flex Item 1</div>
+    <!--フレックスアイテム 1-->
+    <div class="flex-item">Flex Item 2</div>
+    <!--フレックスアイテム 2-->
+    </div>
+    <div class="clearfix">
+        <!--浮動要素をクリアするためのclearfixクラス-->
+        <img arc="images/css_sample/portrait_kohaku_01.png"class="flout-left"
+        alt="Floating Image">
+        <!--左に浮上させた画像-->
+        <p>Some text around the floating image.</p>
+        <!--画像の周りのテキスト-->
+    </div>
+    <div class="pseudo-element">Pseudo Element</div>
+    <!--疑似要素が適用される要素-->
+    <div class="gradient-background">Gradient Background</div>
+    <!--グラデーション背景が適用される要素-->
+    <img src="image.jpg"class="filtered-image"alt="Filtered image">
+    <!--フィルターが適用された画像-->
     <section class="portfolio">
         <h2>ポートフォリオ</h2>
         <!-- ここにポートフォリオの内容を追加 -->
